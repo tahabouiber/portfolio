@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Add the favicon here */}
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="./favicon.png" />
       </head>
       <body className={inter.className}>
         <ToastContainer />
