@@ -17,7 +17,7 @@ export const projectsData = [
         role: 'Développeur',
         code: '',
         demo: '',
-        image: '/image/vrgame.png',
+        image: './image/vrgame.png',
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ export const projectsData = [
         tools: ['Figma', 'React.js', 'PHP', 'Python'],
         role: 'Développeur',
         demo: '',
-        image: '/image/wolfit.png',
+        image: './image/wolfit.png',
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ export const projectsData = [
         role: 'Développeur',
         code: '',
         demo: '',
-        image: '/image/crefin.jpg',
+        image: './image/crefin.jpg',
     },
     {
         id: 5,
@@ -46,6 +46,6 @@ export const projectsData = [
         role: 'Développeur',
         code: '',
         demo: '',
-        image: '/image/FootPourTousApp.png',
+        image: './image/FootPourTousApp.png',
     }
 ];
