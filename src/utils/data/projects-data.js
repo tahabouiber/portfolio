@@ -7,7 +7,7 @@ export const projectsData = [
         role: 'Développeur',
         code: '',
         demo: '',
-        image: '../public/image/ensimapp.png',
+        image: './image/ensimapp.png',
     },
     {
         id: 2,
