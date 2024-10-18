@@ -46,6 +46,6 @@ export const projectsData = [
         role: 'Développeur',
         code: '',
         demo: '',
-        image: './image/crefin.jpg',
+        image: './image/visionstereo.jpg',
     }
 ];
