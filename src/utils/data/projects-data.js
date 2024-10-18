@@ -21,6 +21,16 @@ export const projectsData = [
     },
     {
         id: 3,
+        name: 'Application mobile FootPourTous',
+        description: "Développement d'une application Android pour la gestion des réservations dans un centre sportif. Le projet a utilisé Kotlin pour le développement mobile et Firebase pour la gestion en temps réel des données et des utilisateurs. (ENSIM 2023-2024)",
+        tools: ['Kotlin', 'Firebase'],
+        role: 'Développeur',
+        code: '',
+        demo: '',
+        image: './image/FootPourTousApp.png',
+    },
+    {
+        id: 4,
         name: 'Jeu IA WolfIt',
         description: "Développement d'une plateforme web pour le jeu de société Loup-Garou, permettant aux utilisateurs de jouer contre des intelligences artificielles. Figma a été utilisé pour le design de l'interface, React.js pour le front-end, PHP pour le back-end et Python pour la création des algorithmes d'intelligence artificielle. (24H DU CODE 2024)",
         tools: ['Figma', 'React.js', 'PHP', 'Python'],
@@ -29,7 +39,7 @@ export const projectsData = [
         image: './image/wolfit.png',
     },
     {
-        id: 4,
+        id: 5,
         name: 'Vision Stéréoscopique',
         description: "Conception d'un système de vision stéréoscopique 3D permettant d'estimer la distance entre la caméra et les objets, en utilisant Python pour la programmation, OpenCV pour le traitement d'image, SolidWorks pour la modélisation 3D et Asana pour la gestion du projet en mode Agile. (ENSIM 2023-2024)",
         tools: ['Python', 'OpenCV', 'SolidWorks', 'Agile (Asana)'],
@@ -37,15 +47,5 @@ export const projectsData = [
         code: '',
         demo: '',
         image: './image/crefin.jpg',
-    },
-    {
-        id: 5,
-        name: 'Application mobile FootPourTous',
-        description: "Développement d'une application Android pour la gestion des réservations dans un centre sportif. Le projet a utilisé Kotlin pour le développement mobile et Firebase pour la gestion en temps réel des données et des utilisateurs. (ENSIM 2023-2024)",
-        tools: ['Kotlin', 'Firebase'],
-        role: 'Développeur',
-        code: '',
-        demo: '',
-        image: './image/FootPourTousApp.png',
     }
 ];
