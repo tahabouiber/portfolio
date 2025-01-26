@@ -10,5 +10,9 @@ export const personalData = {
   facebook: 'https://www.facebook.com/bouiber',
   linkedIn: 'https://www.linkedin.com/in/taha-bouiber/',
   twitter: 'https://x.com/TahaBouiber',
+<<<<<<< HEAD
   resume: "https://drive.google.com/file/d/1BgmoJsRN8riEVGwYysmASy5aPYwnwisE/view?usp=sharing"
+=======
+  resume: "https://drive.google.com/file/d/14YsOUlaxXfbBhIPTAvCvcuvFABBS9ina/view?usp=sharing"
+>>>>>>> 5fa0b3c1d8afa1d483b1ecf53f985daf8815ef57
 }
