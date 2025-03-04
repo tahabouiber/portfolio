@@ -4,10 +4,10 @@ import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
+import { experiences } from "/src/utils/data/experience";
+import experience from "/public/lottie/code.json";
 
 
-const experience = "lottie/code.json";
-const experiences = "utils/data/experience";
 
 function Experience() {
   return (
@@ -24,7 +24,7 @@ function Experience() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Experiences
+            Expériences
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -58,15 +58,32 @@ function Experience() {
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
                         <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                          <BsPersonWorkspace size={36} />
+                          <BsPersonWorkspace size={56} />
                         </div>
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {experience.title}
+                          <div className="flex items-center gap-x-8 px-5 py-1">
+                            <div>
+                              <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                                {experience.title}
+                              </p>
+                              <p className="text-sm sm:text-base">
+                                {experience.company}
+                              </p>
+                            </div>
+                            <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
+                              <img 
+                                src={experience.image} 
+                                alt={`${experience.name} image`} 
+                                className="w-28 h-auto object-cover rounded-lg mb-4" 
+                              />
+                            </div>
+                          </div>
+
+                          <p className="mt-4">
+                            <span className="text-cyan-400">{' ' + experience.description}</span>
                           </p>
-                          <p className="text-sm sm:text-base">
-                            {experience.company}
-                          </p>
+
+                          
                         </div>
                       </div>
                     </div>

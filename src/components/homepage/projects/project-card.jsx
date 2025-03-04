@@ -1,8 +1,13 @@
 // @flow strict
 
 import * as React from 'react';
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 function ProjectCard({ project }) {
+
+  const hasMultipleImages =
+  Array.isArray(project.images) && project.images.length > 1;
 
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
@@ -22,13 +27,38 @@ function ProjectCard({ project }) {
         </p>
       </div>
 <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-      <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-        <img 
-          src={project.image} 
-          alt={`${project.name} image`} 
-          className="w-full h-auto object-cover rounded-lg mb-4" 
-        />
-      </div>
+{hasMultipleImages ? (
+        // Multiple images: use the marquee slider
+        <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
+          <Marquee speed={50} pauseOnHover={true} gradient={false}>
+            {project.images.map((image, index) => (
+              <div key={index} className="mx-4">
+                <Image
+                  src={image}
+                  alt={`${project.name} image ${index + 1}`}
+                  width={500}
+                  height={300}
+                  className="rounded-lg"
+                />
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      ) : (
+        // Single image: render it normally.
+        <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
+          {/* If images is an array but only one element, extract that one */}
+          <img
+            src={
+              Array.isArray(project.images)
+                ? project.images[0]
+                : project.images
+            }
+            alt={`${project.name} image`}
+            className="w-full h-auto object-cover rounded-lg mb-4"
+          />
+        </div>
+      )}
 
       
         <code className="font-mono text-xs md:text-sm lg:text-base">

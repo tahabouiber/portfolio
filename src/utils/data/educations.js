@@ -1,8 +1,8 @@
 export const educations = [
   {
     id: 1,
-    title: "INTERACTIONS PERSONNE-SYSTÈME (IPS)",
-    duration: "2022 - Present",
+    title: "INGÉNIERIE INFORMATIQUE",
+    duration: "2022 - Présent",
     institution: "ENSIM , LE MANS",
   },
   {

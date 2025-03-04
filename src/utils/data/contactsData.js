@@ -6,5 +6,5 @@ export const contactsData = {
     facebook: 'https://www.facebook.com/bouiber',
     linkedIn: 'https://www.linkedin.com/in/taha-bouiber/',
     twitter: 'https://x.com/TahaBouiber',
-    devUsername: "said7388" //remove this
+
 }

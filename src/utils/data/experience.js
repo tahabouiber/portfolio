@@ -1,20 +1,10 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
-  },
-  {
-    id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
-  },
-  {
-    id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    title: 'STAGE FULLSTACK',
+    company: "CHIPPO Kénitra, Maroc",
+    duration: "Juin 2024 - Septembre 2024",
+    description: "Conception et développement d'un site web dynamique avec React.js (front-end) et Spring Boot (back-end). Implémentation d'API REST et gestion des données en MySQL.",
+    image: './image/chippo-logo.png'
   }
 ]
