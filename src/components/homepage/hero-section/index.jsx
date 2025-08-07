@@ -109,27 +109,23 @@ function HeroSection() {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">Java</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Python</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">React</span>
+                <span className="text-amber-300">TypeScript</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Angular</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Php</span>
+                <span className="text-amber-300">React</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Python</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">MySql</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Figma</span>
+                <span className="text-amber-300">PostgreSQL</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Kotlin</span>
+                <span className="text-amber-300">Azure Devops</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">C#</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Unity</span>
+                <span className="text-amber-300">Git</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>

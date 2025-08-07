@@ -47,15 +47,5 @@ export const projectsData = [
         code: '',
         demo: '',
         images: './image/vrgame.png',
-    },
-    {
-        id: 6,
-        name: 'Vision Stéréoscopique',
-        description: "Conception d'un système de vision stéréoscopique 3D permettant d'estimer la distance entre la caméra et les objets, en utilisant Python pour la programmation, OpenCV pour le traitement d'image, SolidWorks pour la modélisation 3D et Asana pour la gestion du projet en mode Agile. (ENSIM 2023-2024)",
-        tools: ['Python', 'OpenCV', 'SolidWorks', 'Agile (Asana)'],
-        role: 'Développeur logiciel',
-        code: '',
-        demo: '',
-        images: './image/visionstereo.jpg',
     }
 ];
