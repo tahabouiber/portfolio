@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
@@ -19,7 +18,6 @@ function ContactSection() {
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-16 items-center">
-      {/* add the email box here */}
 
         <div className="lg:w-3/4 ">
           <div className="flex flex-col gap-5 lg:gap-9">
