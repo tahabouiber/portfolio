@@ -1,7 +1,10 @@
-// @flow strict
+"use client";
+
 import Link from 'next/link';
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div className="relative border-t bg-[#0d1224] border-[#353951] text-white">
       <div className="mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] py-6 lg:py-10">
@@ -10,7 +13,7 @@ function Footer() {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm">
-            © Portfolio developed by <Link target="_blank" href="https://www.linkedin.com/in/taha-bouiber/" className="text-[#16f2b3]">Taha Bouiber</Link>
+            © {t("footer.developedBy")} <Link target="_blank" href="https://www.linkedin.com/in/taha-bouiber/" className="text-[#16f2b3]">Taha Bouiber</Link>
           </p>
         </div>
       </div>

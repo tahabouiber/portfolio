@@ -1,4 +1,4 @@
-// @flow strict
+"use client";
 
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
@@ -6,10 +6,11 @@ import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import { experiences } from "/src/utils/data/experience";
 import experience from "/public/lottie/code.json";
-
+import { useTranslation } from "react-i18next";
 
 
 function Experience() {
+  const { t }= useTranslation();
   return (
     <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
@@ -24,7 +25,7 @@ function Experience() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Expériences
+            {t("experience.title")}
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -53,7 +54,7 @@ function Experience() {
                       />
                       <div className="flex justify-center">
                         <p className="text-xs sm:text-sm text-[#16f2b3]">
-                          {experience.duration}
+                          {t(experience.duration)}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
@@ -64,10 +65,10 @@ function Experience() {
                           <div className="flex items-center gap-x-8 px-5 py-1">
                             <div>
                               <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                                {experience.title}
+                                {t(experience.title)}
                               </p>
                               <p className="text-sm sm:text-base">
-                                {experience.company}
+                                {t(experience.company)}
                               </p>
                             </div>
                             <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
@@ -80,7 +81,7 @@ function Experience() {
                           </div>
 
                           <p className="mt-4">
-                            <span className="text-cyan-400">{' ' + experience.description}</span>
+                            <span className="text-cyan-400">{' ' + t(experience.description)}</span>
                           </p>
 
                           

@@ -1,4 +1,5 @@
-// @flow strict
+"use client";
+
 import Image from "next/image";
 
 import { educations } from "/src/utils/data/educations";
@@ -6,9 +7,11 @@ import lottieFile from '/public/lottie/study.json';
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
+import { useTranslation } from "react-i18next";
 
 
 function Education() {
+  const { t } = useTranslation();
   return (
     <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
@@ -28,7 +31,7 @@ function Education() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Éducation
+            {t("education.title")}
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -66,9 +69,12 @@ function Education() {
                         </div>
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {education.title}
+                            {t(education.title)}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
+                          <p className="text-xs sm:text-sm mb-2">
+                            {t(education.description)}
+                          </p>
                         </div>
                       </div>
                     </div>

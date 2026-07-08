@@ -1,0 +1,108 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "education": "Éducation",
+    "research": "Projets en cours",
+    "skills": "Compétences",
+    "experience": "Expériences",
+    "projects": "Projets réalisés"
+  },
+
+  "personalData": {
+    "profile": "profil",
+    "whoami": "Qui suis-je?",
+    "name": "TAHA BOUIBER",
+    "designation": "Développeur Logiciel",
+    "description": "Taha Bouiber, ingénieur logiciel récemment diplômé, spécialisé en développement full-stack. Je m'intéresse particulièrement à l'ingénierie logicielle, à l'intelligence artificielle et à l'utilisation des modèles de langage pour améliorer les processus de développement logiciel. Curieux et autonome, je développe actuellement des projets orientés recherche et ingénierie, combinant Spring Boot, Angular et des approches basées sur les LLMs. Je suis à la recherche d'opportunités académiques ou professionnelles dans ces domaines."
+  },
+
+  "hero": {
+    "title": {
+      "hi": "Bonjour,",
+      "iam": "Je suis ",
+      "designation": "Ingénieur Logiciel"
+    },
+    "contact": "Contactez-moi",
+    "getResume": "Télécharger le CV"
+  },
+
+  "education": {
+    "title": "Éducation",
+    "ensim": {
+      "title": "INGÉNIERIE INFORMATIQUE",
+      "description": "Formation d’ingénieur en informatique couvrant le développement logiciel, les systèmes intelligents et les technologies numériques avancées."
+    },
+    "cpge": {
+      "title": "CPGE - Scientifique",
+      "description": "Formation scientifique sélective préparant aux concours des grandes écoles d’ingénieurs."
+    }
+  },
+
+  "research": {
+    "title": "Projets en cours",
+    "llmResearch": {
+      "title": "Recherche LLM – Génération de tests",
+      "duration": "En cours",
+      "description": "Évaluation empirique des LLM pour la génération de tests unitaires JUnit sur des applications Spring Boot. Développement d’un pipeline automatisé pour la génération, l’exécution et l’analyse des tests (compilation, couverture, erreurs)."
+    },
+    "webApp": {
+      "title": "Application full-stack type SAP",
+      "duration": "En cours",
+      "description": "Application web full-stack inspirée des systèmes de gestion d’entreprise, développée avec Angular et Spring Boot. Architecture modulaire avec API REST, PostgreSQL, authentification et gestion des rôles, respectant les bonnes pratiques d’ingénierie logicielle."
+    },
+    "seeProject": "Voir le projet"
+  },
+
+  "skills": {
+    "title": "Compétences"
+  },
+
+  "experience": {
+    "title":"Expérience",
+    "altenIntern": {
+      "title": "Stage dev FULLSTACK & Devops",
+      "company": "ALTEN Toulouse, France",
+      "duration": "Mai 2025 - Novembre 2025",
+      "description": "Participation au développement d'une application web interactive sous forme de jeu multijoueur, conçue pour simuler des scénarios logistiques de manière pédagogique et engageante. Réalisé en fullstack avec Java (Spring Boot), Angular, PostgreSQL et Liquibase pour la base de données. Mise en place de pipelines CI/CD avec Azure DevOps, versionnage avec Git, et travail en Agile."
+    },
+    "chippoIntern": {
+      "title": "Stage dev FULLSTACK",
+      "company": "CHIPPO Kénitra, Maroc",
+      "duration": "Juin 2024 - Septembre 2024",
+      "description": "Conception et développement d'un site web dynamique avec React.js (front-end) et Spring Boot (back-end). Implémentation d'API REST et gestion des données en MySQL."
+    }
+  },
+
+  "projects": {
+    "title": "Projets réalisés",
+    "wolfIt": {
+      "name": "Jeu IA WolfIt",
+      "description": "Développement d'une plateforme web pour le jeu de société Loup-Garou, permettant aux utilisateurs de jouer contre des intelligences artificielles. Figma a été utilisé pour le design de l'interface, React.js pour le front-end, PHP pour le back-end et Python pour la création des algorithmes d'intelligence artificielle. (24H DU CODE 2024)",
+      "role": "Développeur IA"
+    },
+    "enssimasso": {
+      "name": "Projet 5A : ENSSIMASSO",
+      "description": "Développement d’un site web regroupant toutes les associations et clubs de l’école, permettant aux étudiants de s’inscrire, interagir avec les associations, participer à un forum, et consulter les événements.",
+      "role": "Développeur Fullstack"
+    },
+    "commUni": {
+      "name": "Système de communication universitaire",
+      "description": "Développement d'une plateforme web facilitant la communication entre étudiants et intervenants de l'école, utilisant Figma pour la conception de l'interface, React.js pour le front-end dynamique, PHP pour le back-end, et MySQL pour la gestion des bases de données. (ENSIM 2023-2024)",
+      "role": "Développeur Fullstack"
+    },
+    "footPourTous": {
+      "name": "Application mobile FootPourTous",
+      "description": "Développement d'une application Android pour la gestion des réservations dans un centre sportif. Le projet a utilisé Kotlin pour le développement mobile et Firebase pour la gestion en temps réel des données et des utilisateurs. (ENSIM 2023-2024)",
+      "role": "Développeur Fullstack"
+    },
+    "gameVR": {
+      "name": "Jeu VR",
+      "description": "Création d'une expérience de jeu immersive en réalité virtuelle où le joueur incarne un gardien cosmique extraterrestre. Le projet a été développé avec Unity pour le moteur de jeu, Blender pour la modélisation 3D, Git pour le contrôle de version, C pour les scripts et Mixamo pour les animations des personnages. (ENSIM 2023-2024)",
+      "role": "Développeur jeu vidéo"
+    }
+  },
+
+  "footer": {
+    "developedBy": "Portfolio developpé par "
+  }
+}

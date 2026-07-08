@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Portfolio de Taha Bouiber",
   description:
-    "Je m'appelle Taha Bouiber, développeur Fullstack passionné par le développement web, logiciel et mobile. Curieux et autonome, je suis constamment à la recherche de nouvelles technologies à explorer et de défis techniques à relever. J'accorde une grande importance à l'expérience utilisateur, à la qualité du code et à la performance des applications. Actuellement en stage de fin d'études chez ALTEN à Toulouse, je travaille sur le développement Fullstack d'une plateforme web interactive, en intervenant sur le backend (Java, Spring Boot), le frontend (Angular), la base de données (PostgreSQL), ainsi que sur la mise en place de pipelines CI/CD avec Azure DevOps pour l'intégration et le déploiement continus."
+    "Je m'appelle Taha Bouiber, ingénieur logiciel récemment diplômé, spécialisé en développement full-stack. Je m'intéresse particulièrement à l'ingénierie logicielle, à l'intelligence artificielle et à l'utilisation des modèles de langage pour améliorer les processus de développement logiciel. Curieux et autonome, je développe actuellement des projets orientés recherche et ingénierie, combinant Spring Boot, Angular et des approches basées sur les LLMs. Je suis à la recherche d'opportunités académiques ou professionnelles dans ces domaines."
 };
 
 export default function RootLayout({ children }) {

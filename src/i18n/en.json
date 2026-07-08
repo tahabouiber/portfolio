@@ -1,0 +1,108 @@
+{
+  "navbar": {
+    "about": "About",
+    "education": "Education",
+    "research": "Projects in progress",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Completed Projects"
+  },
+
+  "personalData": {
+    "profile": "profile",
+    "whoami": "Who am I?",
+    "name": "TAHA BOUIBER",
+    "designation": "Software Developer",
+    "description": "Taha Bouiber, a recent graduate software engineer, specialized in full-stack development. I am particularly interested in software engineering, artificial intelligence, and the use of language models to improve software development processes. Curious and autonomous, I am currently developing research and engineering-oriented projects, combining Spring Boot, Angular, and LLM-based approaches. I am seeking academic or professional opportunities in these areas."
+  },
+
+  "hero": {
+    "title": {
+      "hi": "Hello,",
+      "iam": "I'm",
+      "designation": "a Software Engineer"
+    },
+    "contact": "Contact me",
+    "getResume": "Get Resume"
+  },
+
+  "education": {
+    "title": "Education",
+    "ensim": {
+      "title": "COMPUTER ENGINEERING",
+      "description": "Computer engineering program covering software development, intelligent systems, and advanced digital technologies."
+    },
+    "cpge": {
+      "title": "CPGE - Scientific",
+      "description": "Selective scientific training preparing for the entrance exams of the grandes écoles d’ingénieurs."
+    }
+  },
+
+  "research": {
+    "title": "Projects in progress",
+    "llmResearch": {
+      "title": "LLM Research – Test Generation",
+      "duration": "In progress",
+      "description": "Empirical evaluation of LLMs for generating JUnit tests on Spring Boot applications. Development of an automated pipeline for test generation, execution, and analysis (compilation, coverage, errors)."
+    },
+    "webApp": {
+      "title": "Full-Stack Application Type SAP",
+      "duration": "In progress",
+      "description": "Full-stack web application inspired by enterprise management systems, developed with Angular and Spring Boot. Modular architecture with REST API, PostgreSQL, authentication, and role management, adhering to software engineering best practices."
+    },
+    "seeProject": "See project"
+  },
+
+  "skills": {
+    "title": "Skills"
+  },
+
+  "experience": {
+    "title":"Experience",
+    "altenIntern": {
+      "title": "Internship dev FULLSTACK & Devops",
+      "company": "ALTEN Toulouse, France",
+      "duration": "May 2025 - November 2025",
+      "description": "Participation to the development of an interactive web application in the form of a multiplayer game, designed to simulate logistical scenarios in an educational and engaging manner. Developed in fullstack with Java (Spring Boot), Angular, PostgreSQL and Liquibase for the database. Implementation of CI/CD pipelines with Azure DevOps, versioning with Git, and work in Agile."
+    },
+    "chippoIntern": {
+      "title": "Internship dev FULLSTACK",
+      "company": "CHIPPO Kénitra, Morocco",
+      "duration": "June 2024 - September 2024",
+      "description": "Design and development of a dynamic website with React.js (front-end) and Spring Boot (back-end). Implementation of REST API and data management in MySQL."
+    }
+  },
+
+  "projects": {
+    "title": "Completed Projects",
+    "wolfIt": {
+      "name": "WolfIt AI Game",
+      "description": "Developed a web platform for the social deduction game Werewolf, allowing users to play against AI opponents. Figma was used for UI design, React.js for the front-end, PHP for the back-end, and Python for AI algorithm development. (24H DU CODE 2024)",
+      "role": "AI Developer"
+    },
+    "enssimasso": {
+      "name": "5th Year Project: ENSSIMASSO",
+      "description": "Developed a website consolidating all school associations and clubs, enabling students to register, interact with associations, participate in a forum, and view events.",
+      "role": "Fullstack Developer"
+    },
+    "commUni": {
+      "name": "University Communication System",
+      "description": "Built a web platform to facilitate communication between students and faculty, using Figma for interface design, React.js for a dynamic front-end, PHP for the back-end, and MySQL for database management. (ENSIM 2023-2024)",
+      "role": "Fullstack Developer"
+    },
+    "footPourTous": {
+      "name": "FootPourTous Mobile App",
+      "description": "Developed an Android app for booking management at a sports center. The project used Kotlin for mobile development and Firebase for real-time data and user management. (ENSIM 2023-2024)",
+      "role": "Fullstack Developer"
+    },
+    "gameVR": {
+      "name": "VR Game",
+      "description": "Created an immersive virtual reality game where the player is an extraterrestrial cosmic guardian. The project used Unity for the game engine, Blender for 3D modeling, Git for version control, C for scripting, and Mixamo for character animations. (ENSIM 2023-2024)",
+      "role": "Game Developer"
+    }
+  },
+
+  "footer": {
+    "developedBy": "Portfolio developed by "
+  }
+}

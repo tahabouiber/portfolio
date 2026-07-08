@@ -1,11 +1,12 @@
-// @flow strict
+"use client";
 
 import * as React from 'react';
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 
 function ProjectCard({ project }) {
-
+  const { t } = useTranslation();
   const hasMultipleImages =
   Array.isArray(project.images) && project.images.length > 1;
 
@@ -23,7 +24,7 @@ function ProjectCard({ project }) {
           <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
         </div>
         <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
-          {project.name}
+          {t(project.name)}
         </p>
       </div>
 <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
@@ -35,7 +36,7 @@ function ProjectCard({ project }) {
               <div key={index} className="mx-4">
                 <Image
                   src={image}
-                  alt={`${project.name} image ${index + 1}`}
+                  alt={`${t(project.name)} image ${index + 1}`}
                   width={500}
                   height={300}
                   className="rounded-lg"
@@ -54,7 +55,7 @@ function ProjectCard({ project }) {
                 ? project.images[0]
                 : project.images
             }
-            alt={`${project.name} image`}
+            alt={`${t(project.name)} image`}
             className="w-full h-auto object-cover rounded-lg mb-4"
           />
         </div>
@@ -71,7 +72,7 @@ function ProjectCard({ project }) {
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
             <span className="text-gray-400">{`'`}</span>
-            <span className="text-amber-300">{project.name}</span>
+            <span className="text-amber-300">{t(project.name)}</span>
             <span className="text-gray-400">{`',`}</span>
           </div>
 
@@ -93,12 +94,12 @@ function ProjectCard({ project }) {
           </div>
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
-            <span className="text-orange-400">{project.role}</span>
+            <span className="text-orange-400">{t(project.role)}</span>
             <span className="text-gray-400">,</span>
           </div>
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Description:</span>
-            <span className="text-cyan-400">{' ' + project.description}</span>
+            <span className="text-cyan-400">{' ' + t(project.description)}</span>
             <span className="text-gray-400">,</span>
           </div>
           <div><span className="text-gray-400">{`};`}</span></div>
