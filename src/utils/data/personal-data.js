@@ -12,5 +12,5 @@ export const personalData = {
   linkedIn: "https://www.linkedin.com/in/taha-bouiber/",
   twitter: "https://x.com/TahaBouiber",
   resume:
-    "https://drive.google.com/file/d/1xZdGi3C3ImSVjJde8EGhML5AMagVNqGx/view?usp=drive_link",
+    "https://drive.google.com/file/d/1QFij4vi5yK6JXEUpFq0q58KUDQ_ttGYf/view?usp=drive_link",
 };

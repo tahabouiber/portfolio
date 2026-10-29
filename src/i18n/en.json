@@ -2,7 +2,7 @@
   "navbar": {
     "about": "About",
     "education": "Education",
-    "research": "Projects in progress",
+    "research": "Personal Project",
     "skills": "Skills",
     "experience": "Experience",
     "projects": "Completed Projects"
@@ -39,18 +39,27 @@
   },
 
   "research": {
-    "title": "Projects in progress",
-    "llmResearch": {
-      "title": "LLM Research – Test Generation",
-      "duration": "In progress",
-      "description": "Empirical evaluation of LLMs for generating JUnit tests on Spring Boot applications. Development of an automated pipeline for test generation, execution, and analysis (compilation, coverage, errors)."
-    },
-    "webApp": {
-      "title": "Full-Stack Application Type SAP",
-      "duration": "In progress",
-      "description": "Full-stack web application inspired by enterprise management systems, developed with Angular and Spring Boot. Modular architecture with REST API, PostgreSQL, authentication, and role management, adhering to software engineering best practices."
-    },
-    "seeProject": "See project"
+    "title": "Personal Project",
+    "personalProject": "Independent personal project",
+    "technologies": "Tech stack",
+    "demoStatus": "Public demo · Simulated transactions",
+    "demoNotice": "Explore the currently deployed version with simulated transactions.",
+    "viewDemo": "View Live Demo",
+    "opensNewTab": "(opens in a new tab)",
+    "kralcash": {
+      "title": "KralCash",
+      "subtitle": "Web-based POS & business management SaaS",
+      "description": "I independently designed, developed and deployed KralCash, a web-based SaaS bringing checkout and day-to-day business management into one bilingual interface. From the Angular frontend to the Spring Boot backend and Google Cloud deployment, I built the project end to end.",
+      "features": {
+        "checkout": "Checkout and receipt generation",
+        "inventory": "Inventory and product management",
+        "permissions": "Employee roles and permissions",
+        "analytics": "Dashboards and sales analytics",
+        "security": "Authentication and access security",
+        "bilingual": "Bilingual French / English interface"
+      },
+      "engineering": "REST APIs connect the frontend to a PostgreSQL-backed service, with transactional consistency and idempotency to keep operations reliable. Automated tests support the application, deployed in Docker containers on Google Cloud."
+    }
   },
 
   "skills": {

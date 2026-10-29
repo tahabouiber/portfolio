@@ -1,15 +1,19 @@
-export const researches = [
-  {
-    id: 1,
-    title: 'research.llmResearch.title',
-    duration: "research.llmResearch.duration",
-    description: "research.llmResearch.description",
-    link: "https://github.com/tahabouiber/llm-test-generation-evaluation"
-  },
-  {
-    id: 2,
-    title: 'research.webApp.title',
-    duration: "research.webApp.duration",
-    description: "research.webApp.description",
-  }
-]
+export const featuredProject = {
+  id: "kralcash",
+  title: "research.kralcash.title",
+  subtitle: "research.kralcash.subtitle",
+  description: "research.kralcash.description",
+  features: [
+    "research.kralcash.features.checkout",
+    "research.kralcash.features.inventory",
+    "research.kralcash.features.permissions",
+    "research.kralcash.features.analytics",
+    "research.kralcash.features.security",
+    "research.kralcash.features.bilingual",
+  ],
+  engineering: "research.kralcash.engineering",
+  technologies: [
+    "Angular", "TypeScript", "Spring Boot", "Java", "PostgreSQL", "Docker", "Google Cloud",
+  ],
+  link: "https://kralcash.com",
+};

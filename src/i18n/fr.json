@@ -2,7 +2,7 @@
   "navbar": {
     "about": "À propos",
     "education": "Éducation",
-    "research": "Projets en cours",
+    "research": "Projet personnel",
     "skills": "Compétences",
     "experience": "Expériences",
     "projects": "Projets réalisés"
@@ -39,18 +39,27 @@
   },
 
   "research": {
-    "title": "Projets en cours",
-    "llmResearch": {
-      "title": "Recherche LLM – Génération de tests",
-      "duration": "En cours",
-      "description": "Évaluation empirique des LLM pour la génération de tests unitaires JUnit sur des applications Spring Boot. Développement d’un pipeline automatisé pour la génération, l’exécution et l’analyse des tests (compilation, couverture, erreurs)."
-    },
-    "webApp": {
-      "title": "Application full-stack type SAP",
-      "duration": "En cours",
-      "description": "Application web full-stack inspirée des systèmes de gestion d’entreprise, développée avec Angular et Spring Boot. Architecture modulaire avec API REST, PostgreSQL, authentification et gestion des rôles, respectant les bonnes pratiques d’ingénierie logicielle."
-    },
-    "seeProject": "Voir le projet"
+    "title": "Projet personnel",
+    "personalProject": "Projet personnel développé en autonomie",
+    "technologies": "Technologies",
+    "demoStatus": "Démo publique · Transactions simulées",
+    "demoNotice": "Découvrez la version actuellement déployée avec des transactions simulées.",
+    "viewDemo": "Voir la démo en ligne",
+    "opensNewTab": "(s’ouvre dans un nouvel onglet)",
+    "kralcash": {
+      "title": "KralCash",
+      "subtitle": "SaaS de caisse et de gestion commerciale en ligne",
+      "description": "J’ai conçu, développé et déployé KralCash en autonomie : une application SaaS qui réunit l’encaissement et la gestion quotidienne d’une activité commerciale dans une interface bilingue. Du frontend Angular au backend Spring Boot, jusqu’au déploiement sur Google Cloud, j’ai réalisé le projet de bout en bout.",
+      "features": {
+        "checkout": "Encaissement et génération de tickets",
+        "inventory": "Gestion des stocks et des produits",
+        "permissions": "Rôles et permissions des employés",
+        "analytics": "Tableaux de bord et analyse des ventes",
+        "security": "Authentification et sécurité des accès",
+        "bilingual": "Interface bilingue français / anglais"
+      },
+      "engineering": "Des API REST relient le frontend à un service adossé à PostgreSQL. La cohérence transactionnelle et l’idempotence fiabilisent les opérations. Des tests automatisés accompagnent l’application, déployée dans des conteneurs Docker sur Google Cloud."
+    }
   },
 
   "skills": {

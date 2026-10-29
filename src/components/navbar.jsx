@@ -39,14 +39,6 @@ function Navbar() {
           </li>
 
           <li>
-            <Link href="/#education" className="block px-4 py-2">
-              <div className="text-sm text-white hover:text-pink-600">
-                {t("navbar.education")}
-              </div>
-            </Link>
-          </li>
-
-          <li>
             <Link href="/#research" className="block px-4 py-2">
               <div className="text-sm text-white hover:text-pink-600">
                 {t("navbar.research")}
@@ -66,6 +58,14 @@ function Navbar() {
             <Link href="/#experience" className="block px-4 py-2">
               <div className="text-sm text-white hover:text-pink-600">
                 {t("navbar.experience")}
+              </div>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/#education" className="block px-4 py-2">
+              <div className="text-sm text-white hover:text-pink-600">
+                {t("navbar.education")}
               </div>
             </Link>
           </li>
