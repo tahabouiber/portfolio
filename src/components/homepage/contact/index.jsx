@@ -1,82 +1,40 @@
-import Link from 'next/link';
-import { BiLogoLinkedin } from "react-icons/bi";
-import { CiLocationOn } from "react-icons/ci";
-import { FaFacebook } from 'react-icons/fa';
-import { FaXTwitter } from "react-icons/fa6";
-import { IoLogoGithub, IoMdCall } from "react-icons/io";
-import { MdAlternateEmail } from "react-icons/md";
+﻿"use client";
+
+import { BsArrowUpRight, BsGithub, BsLinkedin, BsTelephone, BsGeoAlt } from "react-icons/bs";
+import { FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 import { personalData } from "/src/utils/data/personal-data";
 
-
-function ContactSection() {
+export default function ContactSection() {
+  const { t } = useTranslation();
+  const socials = [
+    { name: "GitHub", href: personalData.github, Icon: BsGithub },
+    { name: "LinkedIn", href: personalData.linkedIn, Icon: BsLinkedin },
+    { name: "Facebook", href: personalData.facebook, Icon: FaFacebook },
+    { name: "X / Twitter", href: personalData.twitter, Icon: FaXTwitter },
+  ];
   return (
-    <div id="contact" className="my-12 lg:my-16 relative mt-24 text-white">
-      <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
-          Contact
-        </span>
-        <span className="h-36 w-[2px] bg-[#1a1443]"></span>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-16 items-center">
-
-        <div className="lg:w-3/4 ">
-          <div className="flex flex-col gap-5 lg:gap-9">
-            <p className="text-sm md:text-xl flex items-center gap-3">
-              <MdAlternateEmail
-                className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={36}
-              />
-              <span>{personalData.email}</span>
-            </p>
-            <p className="text-sm md:text-xl flex items-center gap-3">
-              <IoMdCall
-                className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={36}
-              />
-              <span>
-                {personalData.phone}
-              </span>
-            </p>
-            <p className="text-sm md:text-xl flex items-center gap-3">
-              <CiLocationOn
-                className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={36}
-              />
-              <span>
-                {personalData.address}
-              </span>
-            </p>
-          </div>
-          <div className="mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10">
-            <Link target="_blank" href={personalData.github}>
-              <IoLogoGithub
-                className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={48}
-              />
-            </Link>
-            <Link target="_blank" href={personalData.linkedIn}>
-              <BiLogoLinkedin
-                className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={48}
-              />
-            </Link>
-            <Link target="_blank" href={personalData.twitter}>
-              <FaXTwitter
-                className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={48}
-              />
-            </Link>
-            <Link target="_blank" href={personalData.facebook}>
-              <FaFacebook
-                className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={48}
-              />
-            </Link>
-          </div>
+    <section id="contact" aria-labelledby="contact-title" className="contact-section my-section">
+      <div className="section-header"><h2 id="contact-title" className="section-heading">{t("navbar.contact")}<span className="section-heading-rule" aria-hidden="true" /></h2></div>
+      <div className="contact-layout">
+        <div className="contact-invitation">
+          <p className="support-kicker">{t("contact.eyebrow")}</p>
+          <h3>{t("contact.headline")}<span aria-hidden="true">.</span></h3>
+          <p className="contact-description">{t("contact.description")}</p>
+          <p className="contact-email-label">{t("contact.email")}</p>
+          <a className="contact-email" href={`mailto:${personalData.email}`}>{personalData.email}<BsArrowUpRight aria-hidden="true" /></a>
+        </div>
+        <div className="contact-connections">
+          <dl className="contact-details">
+            <div><dt><BsTelephone aria-hidden="true" />{t("contact.phone")}</dt><dd><a href={`tel:${personalData.phone.replace(/[^+\d]/g, "")}`}>{personalData.phone}</a></dd></div>
+            <div><dt><BsGeoAlt aria-hidden="true" />{t("contact.location")}</dt><dd>{personalData.address.trim()}</dd></div>
+          </dl>
+          <h4 className="support-kicker">{t("contact.profiles")}</h4>
+          <ul className="contact-socials">
+            {socials.map(({ name, href, Icon }) => <li key={name}><a href={href} target="_blank" rel="noopener noreferrer"><Icon aria-hidden="true" /><span>{name}</span><BsArrowUpRight aria-hidden="true" /><span className="sr-only">{t("research.opensNewTab")}</span></a></li>)}
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default ContactSection;
+}

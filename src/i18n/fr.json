@@ -1,22 +1,44 @@
 {
   "navbar": {
+    "navigation": "Navigation principale",
+    "language": "Langue",
+    "work": "Réalisations",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu de navigation",
+    "backToTop": "Retour en haut",
     "about": "À propos",
     "education": "Éducation",
     "research": "Projet personnel",
     "skills": "Compétences",
-    "experience": "Expériences",
+    "experience": "Expérience",
     "projects": "Projets réalisés"
   },
-
   "personalData": {
     "profile": "profil",
     "whoami": "Qui suis-je?",
     "name": "TAHA BOUIBER",
     "designation": "Développeur Logiciel",
-    "description": "Taha Bouiber, ingénieur logiciel récemment diplômé, spécialisé en développement full-stack. Je m'intéresse particulièrement à l'ingénierie logicielle, à l'intelligence artificielle et à l'utilisation des modèles de langage pour améliorer les processus de développement logiciel. Curieux et autonome, je développe actuellement des projets orientés recherche et ingénierie, combinant Spring Boot, Angular et des approches basées sur les LLMs. Je suis à la recherche d'opportunités académiques ou professionnelles dans ces domaines."
+    "description": "Taha Bouiber, ingénieur logiciel récemment diplômé, spécialisé en développement full-stack. Je m'intéresse particulièrement à l'ingénierie logicielle, à l'intelligence artificielle et à l'utilisation des modèles de langage pour améliorer les processus de développement logiciel. Curieux et autonome, je développe actuellement des projets orientés recherche et ingénierie, combinant Spring Boot, Angular et des approches basées sur les LLMs. Je suis à la recherche d'opportunités académiques ou professionnelles dans ces domaines.",
+    "aboutLabel": "Ingénierie logicielle / Profil",
+    "viewResume": "Consulter mon CV",
+    "paragraphs": [
+      "Taha Bouiber, ingénieur logiciel récemment diplômé, spécialisé en développement full-stack.",
+      "Je m'intéresse particulièrement à l'ingénierie logicielle, à l'intelligence artificielle et à l'utilisation des modèles de langage pour améliorer les processus de développement logiciel. Curieux et autonome, je développe actuellement des projets orientés recherche et ingénierie, combinant Spring Boot, Angular et des approches basées sur les LLMs.",
+      "Je suis à la recherche d'opportunités académiques ou professionnelles dans ces domaines."
+    ]
   },
-
   "hero": {
+    "eyebrow": "Bonjour, je suis Taha · Toulouse, France",
+    "role": "Ingénieur Logiciel",
+    "description": "Je conçois des applications web, du développement frontend et backend aux tests et au déploiement cloud. Des interfaces soignées. Des systèmes fiables. Une réalisation de bout en bout.",
+    "viewProjects": "Voir les projets",
+    "socialLinks": "Profils sociaux",
+    "codeIllustration": "Illustration de code présentant Taha Bouiber, ingénieur logiciel, et ses compétences frontend, backend et DevOps.",
+    "codeComment": "Du code soigné. Des applications concrètes.",
+    "codeFooter": "Conçu avec soin",
+    "disciplines": "Frontend · Backend · Cloud & DevOps",
+    "exploreWork": "Découvrir mon travail",
     "title": {
       "hi": "Bonjour,",
       "iam": "Je suis ",
@@ -25,19 +47,20 @@
     "contact": "Contactez-moi",
     "getResume": "Télécharger le CV"
   },
-
   "education": {
     "title": "Éducation",
     "ensim": {
-      "title": "INGÉNIERIE INFORMATIQUE",
-      "description": "Formation d’ingénieur en informatique couvrant le développement logiciel, les systèmes intelligents et les technologies numériques avancées."
+      "title": "Ingénierie informatique",
+      "description": "Formation d’ingénieur en informatique couvrant le développement logiciel, les systèmes intelligents et les technologies numériques avancées.",
+      "location": "Le Mans, France"
     },
     "cpge": {
-      "title": "CPGE - Scientifique",
-      "description": "Formation scientifique sélective préparant aux concours des grandes écoles d’ingénieurs."
-    }
+      "title": "Classes préparatoires scientifiques",
+      "description": "Formation scientifique sélective préparant aux concours des grandes écoles d’ingénieurs.",
+      "location": "Kénitra, Maroc"
+    },
+    "illustrationCaption": "Sciences · Informatique · Ingénierie"
   },
-
   "research": {
     "title": "Projet personnel",
     "personalProject": "Projet personnel développé en autonomie",
@@ -59,59 +82,165 @@
         "bilingual": "Interface bilingue français / anglais"
       },
       "engineering": "Des API REST relient le frontend à un service adossé à PostgreSQL. La cohérence transactionnelle et l’idempotence fiabilisent les opérations. Des tests automatisés accompagnent l’application, déployée dans des conteneurs Docker sur Google Cloud."
+    },
+    "flagship": "Projet phare / SaaS",
+    "capabilities": "Un produit. Des usages connectés.",
+    "engineeringLabel": "Conçu de bout en bout",
+    "architecture": "Architecture de l’application",
+    "previewNotice": "Aperçus de l’interface publique · données de démonstration",
+    "screens": {
+      "checkout": "Caisse et encaissement",
+      "inventory": "Gestion des stocks",
+      "dashboard": "Tableau de bord"
     }
   },
-
   "skills": {
-    "title": "Compétences"
+    "title": "Compétences",
+    "intro": "Des technologies complémentaires, du code à l’interface et au déploiement.",
+    "groups": {
+      "languages": {
+        "title": "Langages",
+        "description": "Programmation et logique applicative."
+      },
+      "frontend": {
+        "title": "Interfaces web",
+        "description": "Interfaces et applications web."
+      },
+      "data": {
+        "title": "Données",
+        "description": "Stockage et données en temps réel."
+      },
+      "delivery": {
+        "title": "Cloud & livraison",
+        "description": "Versionnage, conteneurs et cloud."
+      },
+      "creative": {
+        "title": "Design & immersion",
+        "description": "Conception d’interfaces et expériences interactives."
+      }
+    }
   },
-
   "experience": {
-    "title":"Expérience",
+    "title": "Expérience",
     "altenIntern": {
-      "title": "Stage dev FULLSTACK & Devops",
+      "title": "Stage en ingénierie logicielle · Full-stack & DevOps",
       "company": "ALTEN Toulouse, France",
       "duration": "Mai 2025 - Novembre 2025",
-      "description": "Participation au développement d'une application web interactive sous forme de jeu multijoueur, conçue pour simuler des scénarios logistiques de manière pédagogique et engageante. Réalisé en fullstack avec Java (Spring Boot), Angular, PostgreSQL et Liquibase pour la base de données. Mise en place de pipelines CI/CD avec Azure DevOps, versionnage avec Git, et travail en Agile."
+      "description": "Participation au développement d'une application web interactive sous forme de jeu multijoueur, conçue pour simuler des scénarios logistiques de manière pédagogique et engageante. Réalisé en fullstack avec Java (Spring Boot), Angular, PostgreSQL et Liquibase pour la base de données. Mise en place de pipelines CI/CD avec Azure DevOps, versionnage avec Git, et travail en Agile.",
+      "location": "Toulouse, France",
+      "summary": "Participation au développement d’une application web multijoueur simulant des scénarios logistiques de façon pédagogique et engageante.",
+      "contributions": {
+        "fullstack": {
+          "title": "Application full-stack",
+          "body": "Développement du backend en Java/Spring Boot et du frontend en Angular."
+        },
+        "data": {
+          "title": "Données et migrations",
+          "body": "Gestion des données avec PostgreSQL et migrations de base de données avec Liquibase."
+        },
+        "delivery": {
+          "title": "CI/CD et collaboration",
+          "body": "Mise en place de pipelines CI/CD avec Azure DevOps, versionnage Git et travail en Agile."
+        }
+      }
     },
     "chippoIntern": {
-      "title": "Stage dev FULLSTACK",
+      "title": "Stage en développement logiciel · Full-stack",
       "company": "CHIPPO Kénitra, Maroc",
       "duration": "Juin 2024 - Septembre 2024",
-      "description": "Conception et développement d'un site web dynamique avec React.js (front-end) et Spring Boot (back-end). Implémentation d'API REST et gestion des données en MySQL."
-    }
+      "description": "Conception et développement d'un site web dynamique avec React.js (front-end) et Spring Boot (back-end). Implémentation d'API REST et gestion des données en MySQL.",
+      "location": "Kénitra, Maroc",
+      "summary": "Conception et développement d’un site web dynamique.",
+      "contributions": {
+        "fullstack": {
+          "title": "Frontend et backend",
+          "body": "Conception de l’interface React.js et développement du backend Spring Boot."
+        },
+        "api": {
+          "title": "API et données",
+          "body": "Implémentation d’API REST et gestion des données avec MySQL."
+        }
+      }
+    },
+    "eyebrow": "Expérience en entreprise",
+    "intro": "Du développement d’applications à leur livraison.",
+    "seeProjects": "Explorer mes projets"
   },
-
   "projects": {
     "title": "Projets réalisés",
     "wolfIt": {
       "name": "Jeu IA WolfIt",
       "description": "Développement d'une plateforme web pour le jeu de société Loup-Garou, permettant aux utilisateurs de jouer contre des intelligences artificielles. Figma a été utilisé pour le design de l'interface, React.js pour le front-end, PHP pour le back-end et Python pour la création des algorithmes d'intelligence artificielle. (24H DU CODE 2024)",
-      "role": "Développeur IA"
+      "role": "Développeur IA",
+      "category": "IA & web",
+      "highlights": {
+        "ai": "Algorithmes Python pour les adversaires IA du jeu Loup-Garou.",
+        "web": "Interface React et backend PHP, conçus avec Figma."
+      }
     },
     "enssimasso": {
       "name": "Projet 5A : ENSSIMASSO",
       "description": "Développement d’un site web regroupant toutes les associations et clubs de l’école, permettant aux étudiants de s’inscrire, interagir avec les associations, participer à un forum, et consulter les événements.",
-      "role": "Développeur Fullstack"
+      "role": "Développeur Fullstack",
+      "category": "Plateforme associative",
+      "highlights": {
+        "community": "Inscriptions aux associations, forum étudiant et événements.",
+        "stack": "React et Spring Boot avec MySQL et Azure dans la stack."
+      }
     },
     "commUni": {
       "name": "Système de communication universitaire",
       "description": "Développement d'une plateforme web facilitant la communication entre étudiants et intervenants de l'école, utilisant Figma pour la conception de l'interface, React.js pour le front-end dynamique, PHP pour le back-end, et MySQL pour la gestion des bases de données. (ENSIM 2023-2024)",
-      "role": "Développeur Fullstack"
+      "role": "Développeur Fullstack",
+      "category": "Plateforme universitaire",
+      "highlights": {
+        "communication": "Une plateforme web commune aux étudiants et intervenants.",
+        "data": "Interface React dynamique avec PHP et MySQL."
+      }
     },
     "footPourTous": {
       "name": "Application mobile FootPourTous",
       "description": "Développement d'une application Android pour la gestion des réservations dans un centre sportif. Le projet a utilisé Kotlin pour le développement mobile et Firebase pour la gestion en temps réel des données et des utilisateurs. (ENSIM 2023-2024)",
-      "role": "Développeur Fullstack"
+      "role": "Développeur Fullstack",
+      "category": "Application Android",
+      "highlights": {
+        "mobile": "Parcours de réservation pour un centre sportif, développés en Kotlin.",
+        "realtime": "Réservations et gestion des utilisateurs en temps réel avec Firebase."
+      }
     },
     "gameVR": {
       "name": "Jeu VR",
       "description": "Création d'une expérience de jeu immersive en réalité virtuelle où le joueur incarne un gardien cosmique extraterrestre. Le projet a été développé avec Unity pour le moteur de jeu, Blender pour la modélisation 3D, Git pour le contrôle de version, C pour les scripts et Mixamo pour les animations des personnages. (ENSIM 2023-2024)",
-      "role": "Développeur jeu vidéo"
-    }
+      "role": "Développeur jeu vidéo",
+      "category": "Réalité virtuelle",
+      "highlights": {
+        "immersive": "Une expérience immersive sous Unity avec un gardien cosmique.",
+        "assets": "Modélisation 3D et animation des personnages avec Blender et Mixamo."
+      }
+    },
+    "intro": "Plateformes web, intelligence artificielle, mobile et expériences immersives. Une sélection de projets et de leurs enjeux techniques.",
+    "discoverFlagship": "Découvrir KralCash, mon SaaS développé en autonomie",
+    "role": "Mon rôle",
+    "highlights": "Points d’ingénierie",
+    "preview": "Aperçu du projet",
+    "gallery": "Captures de {{name}}",
+    "enlargeImage": "Ouvrir l’image de {{name}} en grand format",
+    "previousImage": "Image précédente",
+    "nextImage": "Image suivante",
+    "viewDemo": "Voir la démo",
+    "viewCode": "Voir sur GitHub"
   },
-
   "footer": {
-    "developedBy": "Portfolio developpé par "
+    "developedBy": "Portfolio developpé par ",
+    "navigation": "Navigation de pied de page"
+  },
+  "contact": {
+    "eyebrow": "Restons en contact",
+    "headline": "Construisons la suite",
+    "description": "Un projet, une opportunité en ingénierie logicielle ou une idée à échanger ? Contactez-moi.",
+    "email": "Écrivez-moi",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "profiles": "Retrouvez-moi aussi sur"
   }
 }

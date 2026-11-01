@@ -1,41 +1,21 @@
-"use client";
+﻿"use client";
 
-import ProjectCard from './project-card';
+import ProjectCard from "./project-card";
 import { projectsData } from "/src/utils/data/projects-data";
 import { useTranslation } from "react-i18next";
 
-
-const Projects = () => {
+export default function Projects() {
   const { t } = useTranslation();
   return (
-    <div id='projects' className="relative z-50  my-12 lg:my-24">
-      <div className="sticky top-10">
-        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
-        <div className="flex items-center justify-start relative">
-          <span className="bg-[#1a1443] absolute left-0  w-fit text-white px-5 py-3 text-xl rounded-md">
-            {t("projects.title")}
-          </span>
-          <span className="w-full h-[2px] bg-[#1a1443]"></span>
-        </div>
+    <section id="projects" aria-labelledby="projects-title" className="project-showcase my-section">
+      <div className="section-header">
+        <h2 id="projects-title" className="section-heading">{t("projects.title")}<span className="section-heading-rule" aria-hidden="true" /></h2>
+        <p className="project-section-intro">{t("projects.intro")}</p>
+        <a href="#research" className="featured-project-reference"><span aria-hidden="true">↗</span>{t("projects.discoverFlagship")}</a>
       </div>
-
-      <div className="pt-24">
-        <div className="flex flex-col gap-6">
-          {projectsData.slice(0, 6).map((project, index) => (
-            <div
-              id={`sticky-card-${index + 1}`}
-              key={index}
-              className="sticky-card w-full mx-auto max-w-2xl sticky"
-            >
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <ProjectCard project={project} />
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="project-list">
+        {projectsData.map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Projects;
+}

@@ -1,102 +1,56 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
-import { BsPersonWorkspace } from "react-icons/bs";
+import { BsCheck2, BsArrowDownRight } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import { experiences } from "/src/utils/data/experience";
-import experience from "/public/lottie/code.json";
-import { useTranslation } from "react-i18next";
+import experienceAnimation from "/public/lottie/code.json";
 
-
-function Experience() {
-  const { t }= useTranslation();
+export default function Experience() {
+  const { t } = useTranslation();
   return (
-    <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
-      <Image
-        src="./section.svg"
-        alt="Hero"
-        width={1572}
-        height={795}
-        className="absolute top-0 -z-10"
-      />
-
-      <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            {t("experience.title")}
-          </span>
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-        </div>
+    <section id="experience" aria-labelledby="experience-title" className="experience-section my-section">
+      <div className="section-header">
+        <h2 id="experience-title" className="section-heading">{t("experience.title")}<span className="section-heading-rule" aria-hidden="true" /></h2>
       </div>
-
-      <div className="py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center items-start">
-            <div className="w-full h-full">
-              <AnimationLottie animationPath={experience} />
-            </div>
-          </div>
-
-          <div>
-            <div className="flex flex-col gap-6">
-              {
-                experiences.map(experience => (
-                  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
-                    <div className="p-3 relative">
-                      <Image
-                        src="./blur-23.svg"
-                        alt="Hero"
-                        width={1080}
-                        height={200}
-                        className="absolute bottom-0 opacity-80"
-                      />
-                      <div className="flex justify-center">
-                        <p className="text-xs sm:text-sm text-[#16f2b3]">
-                          {t(experience.duration)}
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                          <BsPersonWorkspace size={56} />
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-x-8 px-5 py-1">
-                            <div>
-                              <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                                {t(experience.title)}
-                              </p>
-                              <p className="text-sm sm:text-base">
-                                {t(experience.company)}
-                              </p>
-                            </div>
-                            <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-                              <img 
-                                src={experience.image} 
-                                alt={`${experience.name} image`} 
-                                className="w-28 h-auto object-cover rounded-lg mb-4" 
-                              />
-                            </div>
-                          </div>
-
-                          <p className="mt-4">
-                            <span className="text-cyan-400">{' ' + t(experience.description)}</span>
-                          </p>
-
-                          
-                        </div>
-                      </div>
+      <div className="experience-layout">
+        <aside className="experience-aside">
+          <p className="support-kicker">{t("experience.eyebrow")}</p>
+          <p className="experience-intro">{t("experience.intro")}</p>
+          <div className="experience-illustration" aria-hidden="true"><AnimationLottie animationPath={experienceAnimation} /></div>
+          <a href="#projects" className="support-text-link">{t("experience.seeProjects")}<BsArrowDownRight aria-hidden="true" /></a>
+        </aside>
+        <div className="experience-entries">
+          {experiences.map((entry) => {
+            const Entry = entry.featured ? GlowCard : "article";
+            const glowProps = entry.featured ? { identifier: `experience-${entry.id}` } : {};
+            return (
+              <Entry key={entry.id} {...glowProps} className={`experience-entry${entry.featured ? " experience-entry-featured" : ""}`} aria-labelledby={`experience-${entry.id}-title`}>
+                <header className="experience-entry-header">
+                  <div className="experience-brand">
+                    <div className="experience-logo"><Image src={entry.image} alt={`${entry.employer}`} width={64} height={64} /></div>
+                    <div>
+                      <p className="support-kicker">{t(entry.location)}</p>
+                      <h3 id={`experience-${entry.id}-title`}>{entry.employer}</h3>
                     </div>
-                  </GlowCard>
-                ))
-              }
-            </div>
-          </div>
+                  </div>
+                  <p className="experience-dates">{t(entry.duration)}</p>
+                </header>
+                <p className="experience-position">{t(entry.title)}</p>
+                <p className="experience-summary">{t(entry.summary)}</p>
+                <ul className="experience-contributions">
+                  {entry.contributions.map((key) => <li key={key}><BsCheck2 aria-hidden="true" /><div><h4>{t(`${key}.title`)}</h4><p>{t(`${key}.body`)}</p></div></li>)}
+                </ul>
+                <ul className="experience-stack" aria-label={t("research.technologies")}>
+                  {entry.technologies.map((technology) => <li key={technology}>{technology}</li>)}
+                </ul>
+              </Entry>
+            );
+          })}
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Experience;
+}

@@ -13,6 +13,14 @@ export const skillsData = [
 ]
 
 
+export const skillGroups = [
+  { id: 'languages', skills: ['Java', 'Python', 'TypeScript', 'Javascript', 'C#'] },
+  { id: 'frontend', skills: ['React', 'Angular', 'HTML', 'CSS'] },
+  { id: 'data', skills: ['MySQL', 'PostgreSQL', 'Firebase'] },
+  { id: 'delivery', skills: ['Git', 'Azure', 'Docker'] },
+  { id: 'creative', skills: ['Figma', 'Unity'] },
+];
+
 // AVAILABLE SKILLS
 
 /* 

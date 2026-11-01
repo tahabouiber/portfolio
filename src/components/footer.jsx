@@ -1,24 +1,21 @@
-"use client";
+﻿"use client";
 
-import Link from 'next/link';
+import { BsArrowUpRight, BsArrowUp } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import { personalData } from "/src/utils/data/personal-data";
 
-function Footer() {
+export default function Footer() {
   const { t } = useTranslation();
   return (
-    <div className="relative border-t bg-[#0d1224] border-[#353951] text-white">
-      <div className="mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] py-6 lg:py-10">
-        <div className="flex justify-center -z-40">
-          <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
-        </div>
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm">
-            © {t("footer.developedBy")} <Link target="_blank" href="https://www.linkedin.com/in/taha-bouiber/" className="text-[#16f2b3]">Taha Bouiber</Link>
-          </p>
-        </div>
+    <footer className="site-footer">
+      <div className="footer-inner">
+        <p>© {t("footer.developedBy")} <a href={personalData.linkedIn} target="_blank" rel="noopener noreferrer">Taha Bouiber<span className="sr-only"> {t("research.opensNewTab")}</span></a></p>
+        <nav aria-label={t("footer.navigation")}>
+          <a href={personalData.github} target="_blank" rel="noopener noreferrer">GitHub<BsArrowUpRight aria-hidden="true" /><span className="sr-only">{t("research.opensNewTab")}</span></a>
+          <a href={personalData.linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn<BsArrowUpRight aria-hidden="true" /><span className="sr-only">{t("research.opensNewTab")}</span></a>
+          <a href="#home">{t("navbar.backToTop")}<BsArrowUp aria-hidden="true" /></a>
+        </nav>
       </div>
-    </div >
+    </footer>
   );
-};
-
-export default Footer;
+}

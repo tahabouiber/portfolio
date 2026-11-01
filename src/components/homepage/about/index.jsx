@@ -1,41 +1,27 @@
-"use client";
+﻿"use client";
 
-import { personalData } from "/src/utils/data/personal-data";
 import Image from "next/image";
+import { BsArrowUpRight } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import { personalData } from "/src/utils/data/personal-data";
 
-
-function AboutSection() {
+export default function AboutSection() {
   const { t } = useTranslation();
+  const paragraphs = t("personalData.paragraphs", { returnObjects: true });
   return (
-    <div id="about" className="my-12 lg:my-16 relative">
-      <div className="hidden lg:flex flex-col items-center absolute top-16 -right-8">
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
-          {t("personalData.profile")}
-        </span>
-        <span className="h-36 w-[2px] bg-[#1a1443]"></span>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-        <div className="order-2 lg:order-1">
-          <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-            {t("personalData.whoami")}
-          </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
-            {t("personalData.description")}
-          </p>
+    <section id="about" aria-labelledby="about-title" className="about-section my-section">
+      <div className="section-header"><h2 id="about-title" className="section-heading">{t("personalData.whoami")}<span className="section-heading-rule" aria-hidden="true" /></h2></div>
+      <div className="about-layout">
+        <div className="about-copy">
+          <p className="support-kicker">{t("personalData.aboutLabel")}</p>
+          {paragraphs.map((paragraph, index) => <p key={index} className={index === 0 ? "about-lead" : "about-paragraph"}>{paragraph}</p>)}
+          <a className="support-text-link" href={personalData.resume} target="_blank" rel="noopener noreferrer">{t("personalData.viewResume")}<BsArrowUpRight aria-hidden="true" /><span className="sr-only">{t("research.opensNewTab")}</span></a>
         </div>
-        <div className="flex justify-center order-1 lg:order-2">
-          <Image
-            src={personalData.profile}
-            width={280}
-            height={280}
-            alt="Taha Bouiber"
-            className="rounded-lg transition-all duration-1000 hover:scale-110 cursor-pointer"
-          />
-        </div>
+        <figure className="about-profile">
+          <div className="about-photo" data-card-glow><Image src={personalData.profile} width={2634} height={3511} sizes="(min-width: 768px) 280px, 220px" alt="Taha Bouiber" /></div>
+          <figcaption><span>Taha Bouiber</span><span>{t("hero.role")}</span></figcaption>
+        </figure>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default AboutSection;
+}

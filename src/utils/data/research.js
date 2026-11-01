@@ -1,5 +1,7 @@
 export const featuredProject = {
   id: "kralcash",
+  images: ["./image/kralcash-checkout.jpg", "./image/kralcash-inventory.jpg", "./image/kralcash-dashboard.jpg"],
+  captions: ["research.screens.checkout", "research.screens.inventory", "research.screens.dashboard"],
   title: "research.kralcash.title",
   subtitle: "research.kralcash.subtitle",
   description: "research.kralcash.description",

@@ -1,36 +1,31 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa6";
-
-const DEFAULT_BTN_CLS =
-  "fixed bottom-8 right-6 z-50 flex items-center rounded-full bg-gradient-to-r from-pink-500 to-violet-600 p-4 hover:text-xl transition-all duration-300 ease-out";
-const SCROLL_THRESHOLD = 50;
+import { useTranslation } from "react-i18next";
+import { useMotionPreference } from "./motion-preference";
 
 const ScrollToTop = () => {
-  const [btnCls, setBtnCls] = useState(DEFAULT_BTN_CLS);
+  const { t } = useTranslation();
+  const { reducedMotion } = useMotionPreference();
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > SCROLL_THRESHOLD) {
-        setBtnCls(DEFAULT_BTN_CLS.replace(" hidden", ""));
-      } else {
-        setBtnCls(DEFAULT_BTN_CLS + " hidden");
-      }
-    };
+    const handleScroll = () => setVisible(window.scrollY > 50);
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll, { passive: true });
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const onClickBtn = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: reducedMotion ? "instant" : "smooth" });
+  };
 
-  return (
-    <button className={btnCls} onClick={onClickBtn}>
-      <FaArrowUp />
+  return visible ? (
+    <button type="button" className="scroll-to-top" onClick={scrollToTop} aria-label={t("navbar.backToTop")}>
+      <FaArrowUp aria-hidden="true" />
     </button>
-  );
+  ) : null;
 };
 
 export default ScrollToTop;

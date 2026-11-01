@@ -1,5 +1,12 @@
 {
   "navbar": {
+    "navigation": "Main navigation",
+    "language": "Language",
+    "work": "Work",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "backToTop": "Back to top",
     "about": "About",
     "education": "Education",
     "research": "Personal Project",
@@ -7,16 +14,31 @@
     "experience": "Experience",
     "projects": "Completed Projects"
   },
-
   "personalData": {
     "profile": "profile",
     "whoami": "Who am I?",
     "name": "TAHA BOUIBER",
     "designation": "Software Developer",
-    "description": "Taha Bouiber, a recent graduate software engineer, specialized in full-stack development. I am particularly interested in software engineering, artificial intelligence, and the use of language models to improve software development processes. Curious and autonomous, I am currently developing research and engineering-oriented projects, combining Spring Boot, Angular, and LLM-based approaches. I am seeking academic or professional opportunities in these areas."
+    "description": "Taha Bouiber, a recent graduate software engineer, specialized in full-stack development. I am particularly interested in software engineering, artificial intelligence, and the use of language models to improve software development processes. Curious and autonomous, I am currently developing research and engineering-oriented projects, combining Spring Boot, Angular, and LLM-based approaches. I am seeking academic or professional opportunities in these areas.",
+    "aboutLabel": "Software engineering / Profile",
+    "viewResume": "View my resume",
+    "paragraphs": [
+      "Taha Bouiber, a recent graduate software engineer, specialized in full-stack development.",
+      "I am particularly interested in software engineering, artificial intelligence, and the use of language models to improve software development processes. Curious and autonomous, I am currently developing research and engineering-oriented projects, combining Spring Boot, Angular, and LLM-based approaches.",
+      "I am seeking academic or professional opportunities in these areas."
+    ]
   },
-
   "hero": {
+    "eyebrow": "Hello, I'm Taha · Toulouse, France",
+    "role": "Software Engineer",
+    "description": "I build web applications, from frontend and backend development to testing and cloud deployment. Thoughtful interfaces. Reliable systems. End-to-end ownership.",
+    "viewProjects": "View projects",
+    "socialLinks": "Social profiles",
+    "codeIllustration": "Code illustration introducing Taha Bouiber as a Software Engineer, with frontend, backend and DevOps skills.",
+    "codeComment": "Thoughtful code. Real-world applications.",
+    "codeFooter": "Built with purpose",
+    "disciplines": "Frontend · Backend · Cloud & DevOps",
+    "exploreWork": "Explore my work",
     "title": {
       "hi": "Hello,",
       "iam": "I'm",
@@ -25,19 +47,20 @@
     "contact": "Contact me",
     "getResume": "Get Resume"
   },
-
   "education": {
     "title": "Education",
     "ensim": {
-      "title": "COMPUTER ENGINEERING",
-      "description": "Computer engineering program covering software development, intelligent systems, and advanced digital technologies."
+      "title": "Computer engineering",
+      "description": "Computer engineering program covering software development, intelligent systems, and advanced digital technologies.",
+      "location": "Le Mans, France"
     },
     "cpge": {
-      "title": "CPGE - Scientific",
-      "description": "Selective scientific training preparing for the entrance exams of the grandes écoles d’ingénieurs."
-    }
+      "title": "Scientific preparatory classes",
+      "description": "Selective scientific training preparing for the entrance exams of the grandes écoles d’ingénieurs.",
+      "location": "Kenitra, Morocco"
+    },
+    "illustrationCaption": "Science · Computing · Engineering"
   },
-
   "research": {
     "title": "Personal Project",
     "personalProject": "Independent personal project",
@@ -59,59 +82,165 @@
         "bilingual": "Bilingual French / English interface"
       },
       "engineering": "REST APIs connect the frontend to a PostgreSQL-backed service, with transactional consistency and idempotency to keep operations reliable. Automated tests support the application, deployed in Docker containers on Google Cloud."
+    },
+    "flagship": "Flagship project / SaaS",
+    "capabilities": "One product. Connected workflows.",
+    "engineeringLabel": "Engineered end to end",
+    "architecture": "Application architecture",
+    "previewNotice": "Public interface previews · demonstration data",
+    "screens": {
+      "checkout": "Checkout & sales",
+      "inventory": "Inventory management",
+      "dashboard": "Business dashboard"
     }
   },
-
   "skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "intro": "Complementary technologies, from application code to interfaces and deployment.",
+    "groups": {
+      "languages": {
+        "title": "Languages",
+        "description": "Programming and application logic."
+      },
+      "frontend": {
+        "title": "Web interfaces",
+        "description": "Web interfaces and applications."
+      },
+      "data": {
+        "title": "Data",
+        "description": "Storage and real-time data."
+      },
+      "delivery": {
+        "title": "Cloud & delivery",
+        "description": "Version control, containers and cloud."
+      },
+      "creative": {
+        "title": "Design & immersion",
+        "description": "Interface design and interactive experiences."
+      }
+    }
   },
-
   "experience": {
-    "title":"Experience",
+    "title": "Experience",
     "altenIntern": {
-      "title": "Internship dev FULLSTACK & Devops",
+      "title": "Software Engineering Intern · Full-stack & DevOps",
       "company": "ALTEN Toulouse, France",
       "duration": "May 2025 - November 2025",
-      "description": "Participation to the development of an interactive web application in the form of a multiplayer game, designed to simulate logistical scenarios in an educational and engaging manner. Developed in fullstack with Java (Spring Boot), Angular, PostgreSQL and Liquibase for the database. Implementation of CI/CD pipelines with Azure DevOps, versioning with Git, and work in Agile."
+      "description": "Participation to the development of an interactive web application in the form of a multiplayer game, designed to simulate logistical scenarios in an educational and engaging manner. Developed in fullstack with Java (Spring Boot), Angular, PostgreSQL and Liquibase for the database. Implementation of CI/CD pipelines with Azure DevOps, versioning with Git, and work in Agile.",
+      "location": "Toulouse, France",
+      "summary": "Contributed to a multiplayer web application that simulates logistics scenarios in an educational and engaging way.",
+      "contributions": {
+        "fullstack": {
+          "title": "Full-stack application",
+          "body": "Java/Spring Boot backend development and Angular frontend development."
+        },
+        "data": {
+          "title": "Data and migrations",
+          "body": "Data management with PostgreSQL and database migrations with Liquibase."
+        },
+        "delivery": {
+          "title": "CI/CD and collaboration",
+          "body": "Implemented CI/CD pipelines with Azure DevOps, used Git for version control and worked in Agile."
+        }
+      }
     },
     "chippoIntern": {
-      "title": "Internship dev FULLSTACK",
+      "title": "Software Development Intern · Full-stack",
       "company": "CHIPPO Kénitra, Morocco",
       "duration": "June 2024 - September 2024",
-      "description": "Design and development of a dynamic website with React.js (front-end) and Spring Boot (back-end). Implementation of REST API and data management in MySQL."
-    }
+      "description": "Design and development of a dynamic website with React.js (front-end) and Spring Boot (back-end). Implementation of REST API and data management in MySQL.",
+      "location": "Kenitra, Morocco",
+      "summary": "Designed and developed a dynamic website.",
+      "contributions": {
+        "fullstack": {
+          "title": "Frontend and backend",
+          "body": "Designed the React.js interface and developed the Spring Boot backend."
+        },
+        "api": {
+          "title": "APIs and data",
+          "body": "Implemented REST APIs and managed data with MySQL."
+        }
+      }
+    },
+    "eyebrow": "Professional experience",
+    "intro": "Building applications. Improving delivery.",
+    "seeProjects": "Explore my projects"
   },
-
   "projects": {
     "title": "Completed Projects",
     "wolfIt": {
       "name": "WolfIt AI Game",
       "description": "Developed a web platform for the social deduction game Werewolf, allowing users to play against AI opponents. Figma was used for UI design, React.js for the front-end, PHP for the back-end, and Python for AI algorithm development. (24H DU CODE 2024)",
-      "role": "AI Developer"
+      "role": "AI Developer",
+      "category": "AI & web",
+      "highlights": {
+        "ai": "Python algorithms for AI-controlled Werewolf opponents.",
+        "web": "React interface and PHP backend, designed with Figma."
+      }
     },
     "enssimasso": {
       "name": "5th Year Project: ENSSIMASSO",
       "description": "Developed a website consolidating all school associations and clubs, enabling students to register, interact with associations, participate in a forum, and view events.",
-      "role": "Fullstack Developer"
+      "role": "Fullstack Developer",
+      "category": "Community platform",
+      "highlights": {
+        "community": "Association registration, student forum and events.",
+        "stack": "React and Spring Boot with MySQL and Azure in the stack."
+      }
     },
     "commUni": {
       "name": "University Communication System",
       "description": "Built a web platform to facilitate communication between students and faculty, using Figma for interface design, React.js for a dynamic front-end, PHP for the back-end, and MySQL for database management. (ENSIM 2023-2024)",
-      "role": "Fullstack Developer"
+      "role": "Fullstack Developer",
+      "category": "University platform",
+      "highlights": {
+        "communication": "A shared web platform for students and faculty.",
+        "data": "Dynamic React interface with PHP and MySQL."
+      }
     },
     "footPourTous": {
       "name": "FootPourTous Mobile App",
       "description": "Developed an Android app for booking management at a sports center. The project used Kotlin for mobile development and Firebase for real-time data and user management. (ENSIM 2023-2024)",
-      "role": "Fullstack Developer"
+      "role": "Fullstack Developer",
+      "category": "Android application",
+      "highlights": {
+        "mobile": "Sports-centre booking flows built in Kotlin.",
+        "realtime": "Real-time reservations and user management with Firebase."
+      }
     },
     "gameVR": {
       "name": "VR Game",
       "description": "Created an immersive virtual reality game where the player is an extraterrestrial cosmic guardian. The project used Unity for the game engine, Blender for 3D modeling, Git for version control, C for scripting, and Mixamo for character animations. (ENSIM 2023-2024)",
-      "role": "Game Developer"
-    }
+      "role": "Game Developer",
+      "category": "Virtual reality",
+      "highlights": {
+        "immersive": "An immersive Unity experience with a cosmic guardian character.",
+        "assets": "3D assets and character animation using Blender and Mixamo."
+      }
+    },
+    "intro": "Web platforms, artificial intelligence, mobile and immersive experiences. A selection of projects and the engineering behind them.",
+    "discoverFlagship": "Explore KralCash, my independently developed SaaS",
+    "role": "My role",
+    "highlights": "Engineering highlights",
+    "preview": "Project preview",
+    "gallery": "Screenshots of {{name}}",
+    "enlargeImage": "Open the full-size image of {{name}}",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "viewDemo": "View demo",
+    "viewCode": "View on GitHub"
   },
-
   "footer": {
-    "developedBy": "Portfolio developed by "
+    "developedBy": "Portfolio developed by ",
+    "navigation": "Footer navigation"
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "headline": "Let’s build what’s next",
+    "description": "Have a project, a software engineering opportunity or an idea in mind? Let’s talk.",
+    "email": "Email me",
+    "phone": "Phone",
+    "location": "Location",
+    "profiles": "Find me online"
   }
 }
