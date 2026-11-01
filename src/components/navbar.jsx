@@ -70,8 +70,7 @@ function Navbar() {
       }}>
       <div className="nav-bar">
         <Link href="#home" className="brand" onClick={() => setIsOpen(false)}>
-          <span className="brand-mark" aria-hidden="true">t<span>.</span></span>
-          <span>Taha Bouiber<span className="brand-dot" aria-hidden="true">.</span></span>
+          <span>Taha<span className="brand-dot">.</span>Bouiber</span>
         </Link>
         <div className="nav-controls">
           <div className="language-switch" role="group" aria-label={t("navbar.language")}>

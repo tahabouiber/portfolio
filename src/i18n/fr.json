@@ -29,7 +29,7 @@
     ]
   },
   "hero": {
-    "eyebrow": "Bonjour, je suis Taha · Toulouse, France",
+    "eyebrow": "Bonjour, je suis Taha · Paris, France",
     "role": "Ingénieur Logiciel",
     "description": "Je conçois des applications web, du développement frontend et backend aux tests et au déploiement cloud. Des interfaces soignées. Des systèmes fiables. Une réalisation de bout en bout.",
     "viewProjects": "Voir les projets",
@@ -67,7 +67,7 @@
     "technologies": "Technologies",
     "demoStatus": "Démo publique · Transactions simulées",
     "demoNotice": "Découvrez la version actuellement déployée avec des transactions simulées.",
-    "viewDemo": "Voir la démo en ligne",
+    "viewDemo": "Visiter KralCash",
     "opensNewTab": "(s’ouvre dans un nouvel onglet)",
     "kralcash": {
       "title": "KralCash",
@@ -124,10 +124,10 @@
     "title": "Expérience",
     "altenIntern": {
       "title": "Stage en ingénierie logicielle · Full-stack & DevOps",
-      "company": "ALTEN Toulouse, France",
+      "company": "ALTEN Paris, France",
       "duration": "Mai 2025 - Novembre 2025",
       "description": "Participation au développement d'une application web interactive sous forme de jeu multijoueur, conçue pour simuler des scénarios logistiques de manière pédagogique et engageante. Réalisé en fullstack avec Java (Spring Boot), Angular, PostgreSQL et Liquibase pour la base de données. Mise en place de pipelines CI/CD avec Azure DevOps, versionnage avec Git, et travail en Agile.",
-      "location": "Toulouse, France",
+      "location": "Paris, France",
       "summary": "Participation au développement d’une application web multijoueur simulant des scénarios logistiques de façon pédagogique et engageante.",
       "contributions": {
         "fullstack": {

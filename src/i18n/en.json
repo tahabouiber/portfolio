@@ -29,7 +29,7 @@
     ]
   },
   "hero": {
-    "eyebrow": "Hello, I'm Taha · Toulouse, France",
+    "eyebrow": "Hello, I'm Taha · Paris, France",
     "role": "Software Engineer",
     "description": "I build web applications, from frontend and backend development to testing and cloud deployment. Thoughtful interfaces. Reliable systems. End-to-end ownership.",
     "viewProjects": "View projects",
@@ -67,7 +67,7 @@
     "technologies": "Tech stack",
     "demoStatus": "Public demo · Simulated transactions",
     "demoNotice": "Explore the currently deployed version with simulated transactions.",
-    "viewDemo": "View Live Demo",
+    "viewDemo": "Visit KralCash",
     "opensNewTab": "(opens in a new tab)",
     "kralcash": {
       "title": "KralCash",
@@ -124,10 +124,10 @@
     "title": "Experience",
     "altenIntern": {
       "title": "Software Engineering Intern · Full-stack & DevOps",
-      "company": "ALTEN Toulouse, France",
+      "company": "ALTEN Paris, France",
       "duration": "May 2025 - November 2025",
       "description": "Participation to the development of an interactive web application in the form of a multiplayer game, designed to simulate logistical scenarios in an educational and engaging manner. Developed in fullstack with Java (Spring Boot), Angular, PostgreSQL and Liquibase for the database. Implementation of CI/CD pipelines with Azure DevOps, versioning with Git, and work in Agile.",
-      "location": "Toulouse, France",
+      "location": "Paris, France",
       "summary": "Contributed to a multiplayer web application that simulates logistics scenarios in an educational and engaging way.",
       "contributions": {
         "fullstack": {
